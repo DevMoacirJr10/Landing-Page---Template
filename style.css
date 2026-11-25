@@ -1,0 +1,194 @@
+:root {
+    --default-font: "Roboto", sans-serif;
+    --dark-background-color: #1F2937;
+    --logo-size: 24px;
+    --logo-color: #F9FAF8;
+    --hero-size: 48px;
+    --hero-color: #F9FAF8;
+    --hero-weight: 900;
+    --hero-secondary-size: 18px;
+    --hero-secondary-color: #E5E7EB;
+    --btn-cta-background: #3882F6;
+    --info-size: 36px;
+    --info-color: #1F2937;
+    --info-weight: 900;
+    --quote-background-color: #E5E7EB;
+    --quote-size: 36px;
+    --quote-color: #1F2937;
+    --quote-weight: 300;
+    --quote-style: italic;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: var(--default-font);
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: var(--dark-background-color);
+}
+
+.navigation-top {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+} 
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-left: 400px;
+}
+
+.logo{
+    font-size: var(--logo-size);
+    color: var(--logo-color);
+}
+
+.hero-section {
+    background-color: var(--dark-background-color);
+    display: flex;
+    justify-content: center;
+    padding: 80px 100px;
+    gap: 350px;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    max-width: 450px;
+}
+
+.hero-right h1 {
+    font-size: var(--hero-size);
+    color: var(--hero-color);
+    font-weight: var(--hero-weight);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-right p,
+li {
+    font-size: var(--hero-secondary-size);
+    color: var(--hero-secondary-color);
+}
+
+.btn-cta {
+    background-color: var(--btn-cta-background);
+    color: var(--hero-color);
+    border: none;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.info-section {
+    background-color: var(--hero-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.info-section h2 {
+    font-size: var(--info-size);
+    color: var(--info-color);
+    font-weight: var(--info-weight);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180px;
+    text-align: center;
+    gap: 10px;
+}
+
+.card-box {
+    height: 140px;
+    width: 140px;
+    border-radius: 15px;
+    border: var(--btn-cta-background) solid 3px;
+}
+
+.card p {
+    color: var(--info-color);
+    font-size: var(--hero-secondary-size);
+}
+
+.quote-section {
+    background-color: var(--quote-background-color);
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-section .quote-text {
+    font-size: var(--quote-size);
+    color: var(--quote-color);
+    font-weight: var(--quote-weight);
+    font-style: var(--quote-style);
+    display: flex;
+    text-align: left;
+    max-width: 800px;
+}
+
+.quote-section .quote-author {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.cta-section {
+    background-color: var(--hero-color);
+    display: flex;
+    justify-content: center;
+}
+
+.cta-banner {
+    color: var(--hero-color);
+    background-color: var(--btn-cta-background);
+}
+
+.cta-banner .cta-text p {
+    color: var(--hero-secondary-color);
+}
+
+.cta-banner .btn-cta {
+    border: var(--hero-color) solid 1px;
+}
+
+.footer-section {
+    color: var(--hero-secondary-color);
+}
