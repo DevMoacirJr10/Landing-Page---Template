@@ -149,9 +149,10 @@ li {
 
 .quote-section {
     background-color: var(--quote-background-color);
-    padding: 150px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .quote-section .quote-text {
@@ -159,14 +160,16 @@ li {
     color: var(--quote-color);
     font-weight: var(--quote-weight);
     font-style: var(--quote-style);
-    display: flex;
-    text-align: left;
     max-width: 800px;
+    text-align: left;
 }
 
 .quote-section .quote-author {
     font-weight: bold;
     text-align: right;
+    font-style: normal;
+    width: 100%;
+    max-width: 700px;
 }
 
 
@@ -174,11 +177,20 @@ li {
     background-color: var(--hero-color);
     display: flex;
     justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .cta-banner {
     color: var(--hero-color);
     background-color: var(--btn-cta-background);
+    padding: 40px 80px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .cta-banner .cta-text p {
@@ -191,4 +203,6 @@ li {
 
 .footer-section {
     color: var(--hero-secondary-color);
+    padding: 30px 60px;
+    text-align: center;
 }
